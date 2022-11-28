@@ -1,0 +1,93 @@
+
+.details {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+    margin: 0 auto;
+    justify-items: center;
+    justify-content: start;
+    /* align-items: stretch; */
+    /* padding-top: 2rem ; */
+    /* justify-content: space-between; */
+}
+
+.details h5 {
+    font-size: 20px;
+    
+}
+
+.book-description, .book-pic, .book-details {
+    height: 100%;
+    width: 100%;
+    padding: 3rem;
+
+}
+
+
+.book-description {
+    font-size: 20px;
+   
+}
+
+
+
+#addProductToCart {
+    height: 2rem;
+    width: 8rem;
+    background-color: var(--third-color);
+    border: none;
+    width: 100%;
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+#addProductToCart:hover {
+    background-color: var(--fourth-color);
+}
+#quantity {
+    display: block;
+    width: 100%;
+    height: 2rem;
+    border: none;
+    background-color: var(--primary-color);
+}
+
+.modal {
+
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50% );
+    width: 30rem;
+    background-color: var(--primary-color);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 2px 8px 9px #444;
+    display: none;
+}
+
+#cancel {
+    background-color: #EF9A53;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 10rem;
+    border: none;
+    margin: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px 2px  #16161D;
+}
+
+#cancel:active {
+    transform: translate(+2px );
+    transform: translate(+2px);
+    box-shadow: 0 0 0 ;
+    transition-duration: 0.3s;
+}
