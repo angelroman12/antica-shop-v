@@ -1,0 +1,114 @@
+#detailsContainer {
+    width: 100%;
+
+}
+
+.book-pic img {
+    width: 90%;
+    box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+span {
+    font-size: 18px;
+}
+
+.book-description {
+    font-size: 20px;
+    box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.book-description {
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--fourth-color);
+}
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+    min-height: 80vh;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.details-div {
+    margin-bottom: 4rem;
+}
+
+.book-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#addProductToCart {
+    height: 2rem; 
+    background-color: var(--third-color);
+    border: none;
+    width: 100%;
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.price-div {
+    box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+#addProductToCart:hover {
+    background-color: var(--fourth-color);
+}
+#quantity {
+    display: block;
+    width: 100%;
+    height: 2rem;
+    border: none;
+    background-color: var(--primary-color);
+    border-radius: 6px;
+}
+
+.modal {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50% );
+    width: 30rem;
+    background-color: var(--primary-color);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 2px 8px 9px #444;
+    display: none;
+    font-size: 24px;
+}
+
+.opacity {
+    opacity: 0.3;
+}
+
+#cancel {
+    background-color: var(--fourth-color);
+    width: 8rem;
+    height: 3rem;
+    border-radius: 10rem;
+    border: none;
+    margin: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px 2px  #16161D;
+}
+
+#cancel:active {
+    transform: translate(+2px );
+    transform: translate(+2px);
+    box-shadow: 0 0 0 ;
+    transition-duration: 0.3s;
+}

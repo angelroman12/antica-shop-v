@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newStyle.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>Antica Shop</title>
+</head>
+<body>
+<!-- Navbar -->
+<div id="navbar">
+    <div class="logo">         
+        <a href="./index.html"> <h1>Antica Shop</h1>  </a>                
+    </div>
+    <div class="linkNav">
+        <a  href="cart.html" id="cart"> Cart  <i class="fas fa-shopping-cart"></i></button> </a>
+        <a  href="admin.html" id="admin"> Admin <i class="fas fa-lock"></i></button></a>  
+        <a href="#contact"> Contact <i class="fas fa-envelope-open-text"></i></a>       
+    </div>      
+</div>
+<!-- Container -->
+    <div id="adminContainer">         
+         <div id="bookInput">  
+             <input type="text" class="adminInput" id="picture" placeholder="Image">
+             <input type="text" class="adminInput" id="author" placeholder="Author">
+             <input type="text" class="adminInput" id="title" placeholder="Title">
+             <input type="text" class="adminInput" id="stock" placeholder="Stock">
+             <input type="text" class="adminInput" id="price" placeholder="Price">
+             <input type="text" class="adminInput" id="pages" placeholder="Pages">             
+             <textarea name="description" class="adminInput" id="description" cols="20" rows="6" placeholder="Description"></textarea>
+             <button type="submit" id="submit"> Add Book</button>   
+                           
+         </div>
+         
+         <div id="output">
+        
+         </div>
+    </div>
+ 
+<!-- Footer -->
+<footer id="main-footer">
+    <p>Front End Developer Angel Roman // Book Shop  &copy; <span id="year"></span> All Rights Reserved</p>
+</footer>
+   <script src="./src/admin.js" type="module"></script>
+</body>
+</html>
