@@ -1,27 +1,106 @@
 :root {
     --primary-color: #F7ECDE;
     --secondary-color: #E9DAC1;
-    --third-color: #9ED2C6;
-    --fourth-color: #54BAB9;
+    --third-color: #087f5b;
+    --fourth-color: #099268;
 }
 
+
 #cartContainer{
-    min-height: 100%;
+    min-height: 90vh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 2rem;
     width: 90%;
     margin: 2rem auto;
+    /* background-color: #087f5b; */
 }
 
 #table-body img{
-    width: 30%;
+    width: 70%;
+    height: 100%;
 }
 
-.cartRows:nth-child(even) {
-    background-color: rgb(203, 203, 203);
+.cartRows {
+    /* background-color: var(--fourth-color); */
+    margin-bottom: 1rem;
+    list-style: none;
+   display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--fourth-color);
 }
 
-.cartRows:nth-child(odd) {
-    background-color: rgb(224, 223, 223)
+.cartRows button {
+    border: none;
+    height: 2rem;
+    width: 8rem;
+    background-color: #087f5b;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 100px;
+    cursor: pointer;
 }
+
+.cartRows button:hover {
+    background-color: #099268;
+}
+
+.cartRows .delete {
+    background-color: #e03131;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    color: var(--primary-color);
+    font-size: 20px;
+
+}
+.cartRows .delete:hover {
+    background-color: #f03e3e;
+}
+.cartRows li {
+    margin: 2rem;
+}
+#quantity {
+    /* background-color: var(--fourth-color); */
+    text-align: right;
+    border: none;
+    border-bottom: 2px solid #087f5b;
+    width: 2.4rem;
+}
+
+#finish {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 16rem;
+    padding: 2rem;
+    box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+#total {
+    margin: 2rem;
+    border: 1px solid #087f5b;
+    width: 60%;
+    height: 2rem;
+    text-align: center;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#finish-btn {
+    width: 80%;
+    height: 2rem;
+    background-color: var(--fourth-color);
+    color: var(--primary-color);
+    font-size: 18px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+   
+}
+

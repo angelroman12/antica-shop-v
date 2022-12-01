@@ -112,3 +112,8 @@ span {
     box-shadow: 0 0 0 ;
     transition-duration: 0.3s;
 }
+
+#priceTag {
+    display: flex;
+    align-items: center;
+}

@@ -5,6 +5,13 @@ import { uiFilter} from './uiFilter.js'
 document.addEventListener('DOMContentLoaded', getProducts);
 const allBooksBtn = document.getElementById('allBooks').addEventListener('click', allBooksFunc);
 
+const contactBtn = document.getElementById('contact-btn');
+const contactForm = document.getElementById('contact');
+contactBtn.addEventListener('click', (e) => {
+	e.preventDefault();
+	contactForm.scrollIntoView({behavior: 'smooth'})
+})
+
 function allBooksFunc () {
 	output.innerHTML = ''
 	http.get("https://6086e5aea3b9c200173b7295.mockapi.io/products")
